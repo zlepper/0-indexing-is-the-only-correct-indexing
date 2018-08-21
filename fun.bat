@@ -1,7 +1,8 @@
-FOR /L %%A in (10000, 1, 11000) DO (
+FOR /L %%A in (15000, 1, 16000) DO (
 echo %%A >> %%A.txt
-git add .
+git add %%A.txt
 git commit -m %%A
 git pull 
 git push
+sleep 15
 )
